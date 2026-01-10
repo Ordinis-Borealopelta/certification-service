@@ -3,7 +3,7 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
-const port = Bun.env.PORT || 4002;
+const port = Bun.env.CERTIFICATION_PORT || 4002;
 
 app.get("/health", (c) => {
   return c.json({ status: "ok" });

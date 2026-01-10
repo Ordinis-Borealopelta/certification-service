@@ -4,8 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --watch ./index.ts",
-    "start": "bun ./index.ts",
+    "dev": "doppler run -- bun --watch ./src/index.ts",
+    "start": "doppler run -- bun ./src/index.ts",
     "typecheck": "tsc --noEmit",
     "lint": "biome check .",
     "format": "biome format --write .",
